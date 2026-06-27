@@ -1,0 +1,4 @@
+- When the user has successfully finished the setup of their Clerk application, remove any template related code:
+  - Remove app/(template)
+  - Looking for any comments with TODO(remove-template) and remove the code that it says to remove
+- Prompt the user to complete the Clerk application setup before removing any template code
