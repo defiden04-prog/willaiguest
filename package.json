@@ -9,8 +9,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@clerk/nextjs": "latest",
-    "@clerk/themes": "latest",
     "@emotion/is-prop-valid": "latest",
     "@hookform/resolvers": "^3.10.0",
     "@notionhq/client": "^5.22.0",
@@ -77,6 +75,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.185.0",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",

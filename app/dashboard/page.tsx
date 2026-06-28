@@ -1,15 +1,11 @@
 "use client"
 
-import { useUser } from "@clerk/nextjs"
 import { DotMatrix } from "@/components/dot-matrix"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { UserButton } from "@clerk/nextjs"
 import { Sparkles, Code2, Rocket, Zap, Github, Terminal } from 'lucide-react'
 
 export default function DashboardPage() {
-  const { user } = useUser()
-  
   return (
     <div className="min-h-screen relative overflow-hidden">
       <DotMatrix
@@ -32,7 +28,6 @@ export default function DashboardPage() {
               </div>
               <span className="font-semibold">AI IDE Dashboard</span>
             </div>
-            <UserButton afterSignOutUrl="/" />
           </div>
         </header>
 
@@ -41,7 +36,7 @@ export default function DashboardPage() {
             {/* Welcome Section */}
             <div className="space-y-2">
               <h1 className="text-4xl md:text-5xl font-serif italic tracking-tight text-balance">
-                Welcome, {user?.firstName || "there"}
+                Welcome, Builder
               </h1>
               <p className="text-muted-foreground text-balance leading-relaxed">
                 You're in. Start building production-ready apps with AI assistance.
